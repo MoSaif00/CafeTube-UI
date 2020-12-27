@@ -3,3 +3,7 @@ font-family: 'Lato', sans-serif; ### Main Headings ###
 font-family: 'Lora', serif;  ###comments ###
 font-family: 'Noto Serif', serif; ###body###
 font-family: 'Roboto Slab', serif; ### secondary headings */
+
+nav.navbar img.main-logo {
+  width: 130px;
+}

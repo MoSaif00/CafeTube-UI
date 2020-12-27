@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CaféTube-UI</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" /> -->
     <link
       href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Lato&family=Lora&family=Noto+Serif&family=Roboto+Slab&display=swap"
       rel="stylesheet"
@@ -13,6 +13,115 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
   </head>
   <body>
+    <div class="navbar-menu">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+          <a class="navbar-brand" href="index.html"
+            ><img class="main-logo" src="./images/blue-logo.png" alt=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-lg-auto">
+              <li class="nav-item text-uppercase active">
+                <a class="nav-link mr-3" href="index.html">Suggested Videos </a>
+              </li>
+              <li class="nav-item text-uppercase">
+                <a class="nav-link" href="#">Recently Uploaded</a>
+              </li>
+              <li class="nav-item text-uppercase">
+                <a class="nav-link pr-0" href="#">Trends</a>
+              </li>
+              <li class="nav-item text-uppercase">
+                <a
+                  type="button"
+                  class="btn btn-block btn-primary text-white"
+                  href="#"
+                  data-toggle="modal"
+                  data-target="#logInModal"
+                  >Log in</a
+                >
+              </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <input
+                class="form-control mr-sm-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button
+                class="btn btn-outline-primary btn-sm my-2 my-sm-0"
+                type="submit"
+              >
+                Search
+              </button>
+            </form>
+          </div>
+        </nav>
+
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="logInModal"
+          data-backdrop="static"
+          data-keyboard="false"
+          tabindex="-1"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">
+                  Log in Page
+                </h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span>&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="email" class="col-form-label">EMAIL ID :</label>
+                    <input type="email" class="form-control" id="email" />
+                  </div>
+                  <div class="form-group">
+                    <label for="password" class="col-form-label"
+                      >PASSWORD :</label
+                    >
+                    <input type="password" class="form-control" id="password" />
+                  </div>
+                </form>
+                <a href="#">I forgot password</a>
+              </div>
+              <div class="modal-footer">
+                <a href="#" class="btn btn-secondary btn-sm mx-auto">
+                  CREATE NEW ACCOUNT
+                </a>
+
+                <button type="button" class="btn btn-primary">LOGIN</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="height: 1000px"></div>
+
     <script src="./js/jquery-3.5.1.min.js"></script>
     <script src="./js/popper.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
